@@ -1,0 +1,117 @@
+@import '../../../../src/styl/ColorPalette.styl'
+
+$HeadingOneFontFamily = "Roboto Light", sans-serif;
+$HeadingTwoFontFamily = "Roboto Condensed", "Roboto Light", sans-serif;
+$HeadingThreeFontFamily = "Roboto Condensed", "Roboto Light", sans-serif;
+$ContentFontFamily = "Lato", "Roboto", sans-serif;
+$HeadingOneFontSize = 4.8rem;
+$HeadingTwoFontSize = 2.4rem;
+$HeadingThreeFontSize = 2rem;
+$ContentFontSize = 1.6rem;
+
+transition(prop, time)
+  -webkit-transition: prop time
+  -moz-transition: prop time
+  -ms-transition: prop time
+  -o-transition: prop time
+  transition: prop time
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  position: relative
+  width: 100vw
+  font-family: $ContentFontFamily
+  font-size: $ContentFontSize
+  background-color: $PaperWhite
+
+h1
+  font-family: $HeadingOneFontFamily
+  font-size: $HeadingOneFontSize
+
+h2
+  font-family: $HeadingTwoFontFamily
+  font-size: $HeadingTwoFontSize
+
+h3
+  font-family: $HeadingThreeFontFamily
+  font-size: $HeadingThreeFontSize
+
+.background-wrapper
+  position: fixed
+  height: 100vh
+  width: 100vw
+
+.section
+  position: relative
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  margin: 0 auto
+  text-align: center !important
+  > h1
+    margin-top: 150px
+  > p
+    position: relative
+    top: 40px
+    left: 50%
+    transform: translate(-50%, 0)
+    text-align: justify
+  > .initiative
+    position: relative
+    text-align: left
+    float: none
+    display: inline-block
+    height: 80vh
+    top: 10vh
+    cursor: pointer
+    vertical-align: top
+    > .info
+      display: none
+    > p
+      text-align: justify
+      margin-bottom: 20px
+    > .read-more
+      padding: 10px 20px 10px 20px
+      border-radius: 5px
+      border: 2px solid $DarkGrey
+      transition(all, 0.2s)
+      &:hover
+        color: $PaperWhite
+        background: rgba($DarkGrey, 0.5)
+        border: 2px solid transparent
+
+div#initiative-description.open
+  position: fixed
+  opacity: 1
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100vw
+  background: rgba($SkyBlue, 0.5)
+  > span.close-button
+    position: absolute
+    font-size: 30px
+    color: $DarkestBlue
+    top: 10px
+    right: 50px
+    cursor: pointer
+    transition(all, 0.2s)
+    &:hover
+      color: $Pink
+      transform: rotate(180deg)
+
+div#initiative-description
+  position: fixed
+  top: 100vh
+  left: 0
+  opacity: 0
+  height: 100vh
+  width: 100vw
+  padding: 20px
+  padding-top: 80px
+  background: rgba($SkyBlue, 0.5)
+  transition(all, 0.5s)

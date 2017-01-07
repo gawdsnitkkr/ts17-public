@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 100vw;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 4.8rem;
+}
+h2 {
+  font-family: "Roboto Condensed", "Roboto Light", sans-serif;
+  font-size: 2.4rem;
+}
+h3 {
+  font-family: "Roboto Condensed", "Roboto Light", sans-serif;
+  font-size: 2rem;
+}
+.background-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center !important;
+}
+.section > h1 {
+  margin-top: 150px;
+}
+.section > p {
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: justify;
+}
+.section > .initiative {
+  position: relative;
+  text-align: left;
+  float: none;
+  display: inline-block;
+  height: 80vh;
+  top: 10vh;
+  cursor: pointer;
+  vertical-align: top;
+}
+.section > .initiative > .info {
+  display: none;
+}
+.section > .initiative > p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.section > .initiative > .read-more {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #594f4f;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.section > .initiative > .read-more:hover {
+  color: #f4f4f4;
+  background: rgba(89,79,79,0.5);
+  border: 2px solid transparent;
+}
+div#initiative-description.open {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(69,173,168,0.5);
+}
+div#initiative-description.open > span.close-button {
+  position: absolute;
+  font-size: 30px;
+  color: #03030b;
+  top: 10px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+div#initiative-description.open > span.close-button:hover {
+  color: #e84a5f;
+  transform: rotate(180deg);
+}
+div#initiative-description {
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  padding-top: 80px;
+  background: rgba(69,173,168,0.5);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}

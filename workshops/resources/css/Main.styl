@@ -1,0 +1,201 @@
+@import '../../../resources/styl/ColorPalette.styl'
+$White = #ffffff
+$HeadingOneFontFamily = "Roboto Condensed", sans-serif;
+$HeadingTwoFontFamily = "Roboto Condensed", "Roboto Light", sans-serif;
+$HeadingThreeFontFamily = "Roboto Condensed", "Roboto Light", sans-serif;
+$ContentFontFamily = "Lato", "Roboto", sans-serif;
+$HeadingOneFontSize = 4.8rem;
+$HeadingTwoFontSize = 2.4rem;
+$HeadingThreeFontSize = 2rem;
+$ContentFontSize = 1.6rem;
+
+transition(prop, time)
+  -webkit-transition: prop time
+  -moz-transition: prop time
+  -ms-transition: prop time
+  -o-transition: prop time
+  transition: prop time
+
+box-shadow(hoff, voff, blur, color)
+  -webkit-box-shadow: hoff voff blur color
+  -moz-box-shadow: hoff voff blur color
+  box-shadow: hoff voff blur color
+
+border-radius(r)
+  -webkit-border-radius: r
+  -moz-border-radius: r
+  border-radius: r
+
+scaleTo(s)
+  -webkit-transform: scale(s)
+  -moz-transform: scale(s)
+  -ms-transform: scale(s)
+  -o-transform: scale(s)
+  transform: scale(s)
+
+*
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
+
+body
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+h1
+  font-family: $HeadingOneFontFamily
+  font-size: $HeadingOneFontSize
+  color: $Yellow
+  background: none
+
+h2
+  font-family: $HeadingTwoFontFamily
+  font-size: $HeadingTwoFontSize
+  color: $LightPink
+
+div.background-wrapper
+  background: $DarkestBlue
+  z-index: -1
+  position: absolute
+  width: 100vw
+  height: 100vh
+
+div.foreground-wrapper
+  position: absolute
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  overflow-x: hidden
+  overflow-y: scroll
+  z-index: 1
+
+div.workshop-panel
+  position: relative
+  background: none
+  text-align: center
+  margin-top: 0
+  height: 100vh
+  width: 100vw
+
+h2.workshop-venue
+  color: $SkyBlue
+  font-style: italic;
+
+span.workshop-time
+  color: $LightYellow
+
+span.workshop-date
+  color: $LightPink
+  &:after
+    content: ","
+    font-size: 20px
+    position: absolute
+    right: -5px
+    bottom: 0
+
+div.workshop-image
+  position: absolute
+  width: 100vw
+  height: 100vh
+  > img
+    height: 100vh
+    width: 100vw
+    object-fit: cover
+    margin: 0
+    padding: 0
+    
+div.header
+  position: absolute
+  text-align: center
+  width: 100vw
+  margin: 0 auto
+  > img
+    margin-top: 150px
+    width: 250px
+  > h2 > strong
+    font-size: 6rem
+
+div.content
+  position: absolute
+  text-align: left
+  margin: 0 auto
+  @media screen and (min-width: 768px)
+    padding-left: 150px
+  > h1
+    margin-top: 150px
+  > img
+    margin-top: 150px
+
+div.workshop-desc
+  color: $White
+  height: 8rem
+  margin: 0 auto
+  padding-top: 10px
+  padding-bottom: 10px
+  font-family: $ContentFontFamily
+  font-size: $ContentFontSize
+  text-align: justify
+  padding-right: 40px
+  overflow: hidden
+  > span
+    color: $LighterGreen
+    position: absolute
+    right: 5px
+    bottom: 0
+    font-size: 40px
+    padding: 5px
+    cursor: pointer
+    border-radius(50%)
+    transition(all, 0.2s)
+    &:hover
+      color: $SkyBlue
+
+div#descriptionContainer
+  position: fixed
+  height: 100vh
+  width: 100vw
+  padding: 70px 20px
+  font-family: $HeadingThreeFontFamily
+  font-size: $HeadingThreeFontSize
+  color: $DarkestBlue
+  background: rgba($LighterGreen, 0.8)
+  margin-top: 50vh
+  left: 0
+  display: none
+  opacity: 0
+  text-align: justify
+  z-index: 100
+  overflow-y: scroll
+  overflow-x: hidden
+  > span
+    font-family: "Roboto Light", sans-serif
+    position: absolute
+    top: 20px
+    right: 20px
+    font-size: 4rem
+    transform: rotateZ(45deg)
+    transition(all, 0.2s)
+    &:hover
+      color: $SkyBlue
+      cursor: pointer
+
+//Scrollbar
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $DarkBlue;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $Yellow;
+}

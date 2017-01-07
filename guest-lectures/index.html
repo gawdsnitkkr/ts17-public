@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+
+    <title>Techspardha 2017</title>
+
+    <meta name="description" content="Techspardha is the annual technical fest of NIT Kurukshetra."/>
+    <link rel="author" href="http://gawds.in"/>
+    <meta name="author" content="gawds"/>
+    <meta name="robots" content="index, follow"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/Sidebar.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/wire.css">
+
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script type="text/javascript" src="../node_modules/gsap/src/minified/TweenMax.min.js" defer></script>
+    <script type="text/javascript" src="resources/js/Main.js" defer></script>
+    <script type="text/javascript" src="resources/js/background.js" defer></script>
+</head>
+
+<body>
+    <div class="background-wrapper">
+        <canvas id="fixed-background" style="display: none;"></canvas>
+        <canvas id="background"></canvas>
+    </div>
+    <div id="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="foreground-wrapper">
+        <div class="foreground">
+            <div class="guest-lecture-panel">
+                <div class="header">
+                    <h1 style="display: none">Techspardha</h1>
+                    <img src="images/techspardha.png"/>
+                    <h2 class="guest-lecture-venue"><strong>Gusto talks</strong></h2>
+                </div>
+            </div>
+            <div class="guest-lecture-panel">
+                <div class="row content">
+                    <div class="col-md-4 guest-lecture-image">
+                        <img src="resources/drawable/jpg/sk.jpg"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Sourabh Kaushal</h1>
+                        <h2 class="guest-lecture-venue">Founder and Director at Smartcircuits Innovation Pvt. Ltd.</h2>
+                        <h2 class="guest-lecture-venue">at <strong>Senate Hall</strong></h2>
+                        <h2 class="date-time"><span class="guest-lecture-date">20 January</span>&nbsp;<span class="guest-lecture-time"> 9 am to 11 am</span></h2>
+                        <div class="guest-lecture-desc">
+                            Engineer,Space explorer and INK Fellow in association with TED, presently doing research on Space Debris Mitigation and Transportation with internationally recongnised research papers,young achiever of some prestigous awards including Jerome Pearson award,2010 and kaplana chawla young scientist award, 2013.
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guest-lecture-panel">
+                <div class="row content">
+                    <div class="col-md-4 guest-lecture-image">
+                        <img src="resources/drawable/jpg/ak.jpg"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Anurag Kundu</h1>
+                        <h2 class="guest-lecture-venue">Reseacher at AAP</h2>
+                        <h2 class="guest-lecture-venue">at <strong>Senate Hall</strong></h2>
+                        <h2 class="date-time"><span class="guest-lecture-date">20 January</span>&nbsp;<span class="guest-lecture-time"> 2 pm to 4 pm</span></h2>
+                        <div class="guest-lecture-desc">
+                            Socialist teaching under resourced schools at Teach For India, provides research input to media cell on matter realted to policies , english proficient and former columnist for Indian Economist, takes interest in governance, education and debating, alumni to NIT kurukshetra.
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guest-lecture-panel">
+                <div class="row content">
+                    <div class="col-md-4 guest-lecture-image">
+                        <img src="resources/drawable/jpg/vp.jpg"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Vivek Prakash</h1>
+                        <h2 class="guest-lecture-venue">Co-Founder Hackerearth</h2>
+                        <h2 class="guest-lecture-venue">at <strong>Senate Hall</strong></h2>
+                        <h2 class="date-time"><span class="guest-lecture-date">21 January</span>&nbsp;<span class="guest-lecture-time"> 9 am to 11 am</span></h2>
+                        <div class="guest-lecture-desc">
+                            Hard core programmer and IIT Roorkee graduate,loves building developer friendly tools, passionate about improving programming experience, launched a tool for compiling and running codes online, also the co-founder of My Career Stack.
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guest-lecture-panel">
+                <div class="row content">
+                    <div class="col-md-4 guest-lecture-image">
+                        <img src="resources/drawable/jpg/tb.jpg"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Tanmay Bakshi</h1>
+                        <h2 class="guest-lecture-venue">Keynote speaker at TEDx and Developer </h2>
+                        <h2 class="guest-lecture-venue">at <strong>Senate Hall</strong></h2>
+                        <h2 class="date-time"><span class="guest-lecture-date">21 January</span>&nbsp;<span class="guest-lecture-time"> 2 pm to 4 pm</span></h2>
+                        <div class="guest-lecture-desc">
+                            13 years old software developer with specialisation in iOS, IBM Champion, Honorary IBM Cloud advisor, author of "Hello Swift" about iOS programming for kids, passionate about learning and sharing knowledge , runs his own youtube channel for the same.
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guest-lecture-panel">
+                <div class="row content">
+                    <div class="col-md-4 guest-lecture-image">
+                        <img src="resources/drawable/jpg/nt.jpg"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Nikhil Taneja</h1>
+                        <h2 class="guest-lecture-venue">Creative producer at Yash Raj Films</h2>
+                        <h2 class="guest-lecture-venue">at <strong>Senate Hall</strong></h2>
+                        <h2 class="date-time"><span class="guest-lecture-date">22 January</span>&nbsp;<span class="guest-lecture-time"> 9 am to 11 am</span></h2>
+                        <div class="guest-lecture-desc">
+                            A writer-producer of six TV films and a sitcom, famous for his witty one liner "Taneja Main Hoon, Mark Idhar hai",alumni to NIT Kurukshetra, teaches Journalism at Jai Hind college, loves watching movies and trying writing for the same.
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="scroll--navigation">
+            <ul>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="descriptionContainer">
+        <span id="descriptionClose">+</span>
+    </div>
+</body>
+</html>
