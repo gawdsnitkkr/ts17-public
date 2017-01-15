@@ -19,7 +19,7 @@
             },
             CloseDescription: function(){
                 Objects.DescriptionWindow.removeClass('open');
-                Objects.DescriptionWindow.html('');
+                //Objects.DescriptionWindow.html('');
             }
         };
     $d.ready(function(){
